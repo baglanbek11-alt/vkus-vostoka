@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты — Вкус Востока</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Кафе «Вкус Востока»</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог и меню</a>
+      <a href="contacts.html" class="active">Контакты</a>
+      <a href="messages.php">Обращения (БД)</a>
+      <a href="diagnostic.php">Диагностика PHP</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>Свяжитесь с нами</h2>
+    <p>Адрес: г. Рудный. Заполните форму ниже для заказа полуфабрикатов или бронирования банкета.</p>
+    <form action="process.php" method="POST">
+      <label for="name">Ваше имя *</label>
+      <input type="text" id="name" name="name" required placeholder="Например: Азамат">
+
+      <label for="email">Электронная почта *</label>
+      <input type="email" id="email" name="email" required placeholder="name@example.com">
+
+      <label for="subject">Тема обращения</label>
+      <input type="text" id="subject" name="subject" placeholder="Заказ полуфабрикатов">
+
+      <label for="message">Текст сообщения *</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Укажите позиции и количество..."></textarea>
+
+      <button type="submit">Отправить обращение</button>
+    </form>
+  </div>
+  <footer>© 2026 Кафе «Вкус Востока»</footer>
+</body>
+</html>
